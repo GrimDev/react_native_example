@@ -6,7 +6,7 @@ import styles from './styles';
 
 export default class MyText extends React.Component {
   static propTypes = {
-    children: PropTypes.string,
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
     style: PropTypes.object,
   };
 

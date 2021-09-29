@@ -3,19 +3,13 @@ import {SafeAreaView, ScrollView, View} from 'react-native';
 
 import Text from '../../ui-components/Text';
 
-export default class OneFilm extends React.Component {
-  componentDidMount() {
-    if (!this.props.route.params.film_id) {
-      this.props.navigation.navigate('Films');
-    }
-  }
-
+export default class Film extends React.Component {
   render() {
     return (
       <SafeAreaView>
         <ScrollView>
           <View>
-            <Text>One Film {this.props.route.params.film_id}</Text>
+            <Text>Hello World</Text>
           </View>
         </ScrollView>
       </SafeAreaView>
